@@ -32,4 +32,5 @@ services:
  
     App\EventListener\ExceptionListener:
         tags:
-            - { name: kernel.event_listener, event: kernel.exception }
+            # - { name: kernel.event_listener, event: kernel.exception }
+            - { name: kernel.event_listener, event: kernel.exception, method: ozelMethod }
